@@ -35,12 +35,12 @@ namespace AdultSitter
         {
             try
             {
-                throw new Exception("出錯了~出錯了~");
-
                 var events = await _httpContext.Request.GetWebhookEventsAsync(_lineBotConfig.channelSecret);
                 var lineMessagingClient = new LineMessagingClient(_lineBotConfig.accessToken);
                 var lineBotApp = new LineBotApp(lineMessagingClient);
                 await lineBotApp.RunAsync(events);
+
+                throw new Exception("出錯了~出錯了~");
             }
             catch (Exception ex)
             {
