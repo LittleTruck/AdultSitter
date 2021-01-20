@@ -58,7 +58,7 @@ namespace AdultSitter
                         //¦^¶Ç hellow
                         result = new List<ISendMessage>
                     {
-                        new TextMessage("¡H¡H¡H¡H")
+                        new TextMessage("yes")
                     };
                     }
                     break;
